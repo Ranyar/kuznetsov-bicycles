@@ -1,1 +1,1 @@
-# kuznetsov-bicycles
+# Проект "Велосипеды" для Акселератора HTML Academy
