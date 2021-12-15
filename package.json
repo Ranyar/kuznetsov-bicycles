@@ -22,7 +22,8 @@
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x",
     "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x"
+    "eslint-config-htmlacademy": "0.4.x",
+    "sass-loader": "^7"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
