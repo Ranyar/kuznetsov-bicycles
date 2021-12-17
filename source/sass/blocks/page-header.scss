@@ -1,0 +1,37 @@
+.page-header {
+  background-color: $header-background;
+
+  @media (max-width: $tablet-max-width) {
+    background-color: $basic-white;
+  }
+}
+
+.page-header__wrapper {
+  background-image: url("../../img/bike-background-desktop.jpg"), url(".././img/bike-background-desktop.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 825px;
+  position: relative;
+
+  @media (max-width: $tablet-max-width) {
+    background-image: none;
+  }
+}
+
+.page-header__wrapper-about {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: $tablet-max-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: none;
+  }
+}

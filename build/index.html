@@ -11,7 +11,57 @@
   <link rel="preload" href="fonts/opensans-semibold.woff2" as="font">
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font">
 </head>
-<body>
-  <h1>Велосипеды</h1>
+<body class="page-body">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <h1 class="visually-hidden">Велосипеды</h1>
+      <nav class="main-nav main-nav--nojs"><!--main-nav--nojs-->
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Виды велосипедов</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Видео про велосипеды</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle main-nav__toggle--closed"><span class="visually-hidden">Открыть меню</span></button>
+      </nav>
+      <div class="page-header__wrapper-about">
+        <div class="about-us">
+          <a href="#">
+            <img src="img/moon-logo.svg" width="68" height="21" alt="Логотип компании Moon">
+          </a>
+          <div class="about-us__text-wrapper">
+            <p>Мы продаем велосипеды</p>
+            <span>Наш магазин отбирает только самые лучшие велосипеды для продажи</span>
+          </div>
+        </div>
+        <div class="order">
+          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <form class="order__form" id="order-form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" autocomplete="off">
+            <input type="hidden" name="form" value="order">
+            <ul class="order__list">
+              <li class="order__field">
+                <label class="visually-hidden" for="order-name">Имя</label>
+                <input id="order-name" name="name" placeholder="Введите Ваше Имя" required="">
+              </li>
+              <li class="order__field">
+                <label class="visually-hidden" for="order-phone">Телефон</label>
+                <input id="order-phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}">
+              </li>
+            </ul>
+            <button class="order__button" type="submit">Подобрать велосипед мечты</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script src="js/script.js"></script>
 </body>
 </html>

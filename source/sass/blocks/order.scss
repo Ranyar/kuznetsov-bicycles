@@ -1,0 +1,118 @@
+.order {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  max-width: 327px;
+  justify-self: end;
+  padding-top: 254px;
+
+  @media (max-width: $tablet-max-width) {
+    margin: 0 auto;
+    padding-top: 0;
+    max-width: 321px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 0 16px;
+  }
+}
+
+.order p {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  mix-blend-mode: normal;
+  color: $basic-white;
+  text-align: center;
+  margin: 0 0 19px 0;
+
+  @media (max-width: $tablet-max-width) {
+    font-size: 18px;
+    color: $basic-black;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.order__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.order__field {
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-max-width) {
+    &:nth-child(2) {
+      margin-bottom: 21px;
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    &:nth-child(2) {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.order__field input {
+  width: 100%;
+  background: $basic-white;
+  border: 1px solid $input-border;
+  border-radius: 6px;
+  padding: 16px 16px 12px 28px;
+
+  @media (max-width: $tablet-max-width) {
+    padding: 14px 16px 13px 21px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 15px 16px 13px 25px;
+  }
+}
+
+.order__field input::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: $placeholder-color;
+}
+
+.order__field input::-moz-placeholder {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: $placeholder-color;
+}
+
+.order__button {
+  width: 100%;
+  height: 51px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: $basic-black;
+  border-radius: 6px;
+  background-color: $basic-accent;
+  border: none;
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 5px;
+    padding-left: 9px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 0;
+    padding-left: 4px;
+    margin: 0 auto;
+    max-width: 286.5px;
+  }
+}
