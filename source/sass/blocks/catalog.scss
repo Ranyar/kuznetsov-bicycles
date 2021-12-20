@@ -18,7 +18,7 @@
   @media (max-width: $mobile-max-width) {
     max-width: 320px;
     padding: 50px 25px 0 25px;
-    min-height: 1319px;
+    min-height: 1321px;
   }
 }
 
@@ -79,14 +79,14 @@
     width: 180px;
     height: 180px;
     z-index: 1;
-    background-image: url(../img/ellipse-left-desktop.svg);
+    background-image: url(../../img/ellipse-left-desktop.svg);
 
     @media (max-width: $tablet-max-width) {
       top: 201px;
       left: -37px;
       width: 127px;
       height: 127px;
-      background-image: url(../img/ellipse-top-mobile.svg);
+      background-image: url(../../img/ellipse-top-mobile.svg);
     }
 
     @media (max-width: $mobile-max-width) {
@@ -112,7 +112,7 @@
       width: 47px;
       height: 47px;
       z-index: 3;
-      background-image: url(../img/square-desktop.svg);
+      background-image: url(../../img/square-desktop.svg);
     }
 
     &:after {
@@ -123,7 +123,7 @@
       width: 47px;
       height: 47px;
       z-index: 3;
-      background-image: url(../img/square-desktop.svg);
+      background-image: url(../../img/square-desktop.svg);
     }
   }
 
@@ -143,14 +143,14 @@
     width: 95px;
     height: 95px;
     z-index: 3;
-    background-image: url(../img/ellipse-right-desktop.svg);
+    background-image: url(../../img/ellipse-right-desktop.svg);
 
     @media (max-width: $tablet-max-width) {
       top: -20px;
       right: -25px;
       width: 68px;
       height: 68px;
-      background-image: url(../img/ellipse-bottom-mobile.svg);
+      background-image: url(../../img/ellipse-bottom-mobile.svg);
     }
 
     @media (max-width: $mobile-max-width) {
