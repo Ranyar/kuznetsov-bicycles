@@ -4,5 +4,17 @@
 
 .page-main__facts {
   max-width: 1200px;
-  margin: 0 auto 131px auto;
+  margin: 0 auto 150px auto;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.page-main__catalog {
+  margin: 0 auto;
 }
