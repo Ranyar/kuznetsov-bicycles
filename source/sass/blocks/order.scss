@@ -75,6 +75,11 @@
   }
 }
 
+.order__field:hover input,
+.order__field input:focus {
+  background-color: $catalog-background;
+}
+
 .order__field input::-webkit-input-placeholder {
   font-weight: normal;
   font-size: 15px;

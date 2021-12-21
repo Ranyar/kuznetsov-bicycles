@@ -33,6 +33,15 @@
   display: inline-block;
   margin-bottom: 27px;
 
+  &:hover,
+  &:focus {
+    opacity: 70%;
+  }
+
+  &:active {
+    opacity: 50%;
+  }
+
   @media (max-width: $tablet-max-width) {
     margin-bottom: 86px;
   }
