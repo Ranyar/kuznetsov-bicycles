@@ -13,7 +13,7 @@
 }
 
 .page-header__wrapper {
-  background-image: url("../../img/bike-background-desktop.jpg"), url(".././img/bike-background-desktop.webp");
+  background-image: url("../img/bike-background-desktop.jpg"), url("../img/bike-background-desktop.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -21,6 +21,10 @@
   max-width: 1440px;
   min-height: 825px;
   position: relative;
+
+  @media(min-resolution: 2dppx) {
+    background-image: url("../img/bike-background-desktop@2x.jpg"), url("../img/bike-background-desktop@2x.webp");
+  }
 
   @media (max-width: $tablet-max-width) {
     background-image: none;

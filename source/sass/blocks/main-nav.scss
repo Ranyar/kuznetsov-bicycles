@@ -1,6 +1,6 @@
 .main-nav {
   margin: 0 auto;
-  max-width: 873.5px;
+  max-width: 874px;
   padding-top: 5px;
 
   @media (max-width: $tablet-max-width) {
@@ -114,7 +114,7 @@
       right: 17px;
       width: 25px;
       height: 25px;
-      background-image: url(../../img/arrow-icon.svg);
+      background-image: url(../img/arrow-icon.svg);
       background-repeat: no-repeat;
       background-size: 25px 25px;
     }
@@ -142,7 +142,7 @@
       right: 10px;
       width: 30px;
       height: 30px;
-      background-image: url(../../img/menu-burger-icon.svg);
+      background-image: url(../img/menu-burger-icon.svg);
       background-repeat: no-repeat;
       background-size: 30px 30px;
     }
@@ -168,7 +168,7 @@
       right: 12px;
       width: 25px;
       height: 25px;
-      background-image: url(../../img/menu-close-icon.svg);
+      background-image: url(../img/menu-close-icon.svg);
       background-repeat: no-repeat;
       background-size: 25px 25px;
     }
