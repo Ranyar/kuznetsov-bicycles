@@ -15,6 +15,10 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 25px 22px;
+
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/bike-background-desktop@2x.jpg"), url("../img/bike-background-desktop@2x.webp");
+    }
   }
 
   @media (max-width: $mobile-max-width) {
@@ -22,10 +26,18 @@
     min-height: 390px;
     padding: 25px 17px;
     background-image: url("../../img/bike-background-tablet.jpg"), url(".././img/bike-background-tablet.webp");
+
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/bike-background-tablet@2x.jpg"), url("../img/bike-background-tablet@2x.webp");
+    }
   }
 
   @media (max-width: $mobile-min-width) {
     background-image: url("../../img/bike-background-mobile.jpg"), url(".././img/bike-background-mobile.webp");
+
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/bike-background-mobile@2x.jpg"), url("../img/bike-background-mobile@2x.webp");
+    }
   }
 }
 
