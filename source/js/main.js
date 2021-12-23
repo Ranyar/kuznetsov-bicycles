@@ -17,3 +17,20 @@ navToggle.addEventListener('click', function () {
     navToggle.classList.remove('main-nav__toggle--closed');
   }
 });
+
+
+//----- local storage для формы
+
+const orderNameInput = document.getElementById('order-name');
+const orderPhoneInput = document.getElementById('order-phone');
+
+orderNameInput.value = localStorage.getItem('order-name');
+orderPhoneInput.value = localStorage.getItem('order-phone');
+
+orderNameInput.addEventListener('input', () => {
+  localStorage.setItem('order-name', orderNameInput.value);
+})
+
+orderPhoneInput.addEventListener('input', () => {
+  localStorage.setItem('order-phone', orderPhoneInput.value);
+})
