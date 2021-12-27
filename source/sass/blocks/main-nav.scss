@@ -12,7 +12,7 @@
 
   @media (max-width: $tablet-max-width) {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -20,6 +20,7 @@
     z-index: 1000;
     max-width: none;
     padding-top: 100px;
+    overflow-x: auto;
   }
 }
 
@@ -42,6 +43,10 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+  }
 
   @media (max-width: $tablet-max-width) {
     display: none;
@@ -89,13 +94,22 @@
   line-height: 32px;
   letter-spacing: -0.005em;
 
+
   &:hover,
   &:focus {
     color: rgba($basic-white, 0.5);
+
+    @media (max-width: $tablet-max-width) {
+      color: rgba($mobile-menu-text, 0.5);
+    }
   }
 
   &:active {
     color: rgba($basic-white, 0.3);
+
+    @media (max-width: $tablet-max-width) {
+      color: rgba($mobile-menu-text, 0.3);
+    }
   }
 
   @media (max-width: $tablet-max-width) {

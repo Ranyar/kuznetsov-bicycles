@@ -24,13 +24,12 @@
 
 .catalog__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: self-start;
   padding: 0;
+  column-gap: 50px;
   list-style: none;
-
-  @media (max-width: $tablet-max-width) {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 }
 
 .catalog__item {

@@ -11,6 +11,7 @@
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font">
   <link rel="preload" href="fonts/opensans-semibold.woff2" as="font">
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body class="page-body">
   <header class="page-header">
@@ -35,7 +36,7 @@
       </nav>
       <div class="page-header__wrapper-about">
         <div class="about-us">
-          <a href="#">
+          <a>
             <img src="img/moon-logo.svg" width="68" height="21" alt="Логотип компании Moon">
           </a>
           <div class="about-us__text-wrapper">
@@ -54,7 +55,7 @@
               </li>
               <li class="order__field order__field--phone">
                 <label class="visually-hidden" for="order-phone">Телефон</label>
-                <input id="order-phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}" required="">
+                <input id="order-phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" pattern="\+?[0-9\s\-\(\)]+" required="">
               </li>
             </ul>
             <button class="order__button" type="submit">Подобрать велосипед мечты</button>
@@ -68,20 +69,28 @@
       <h2>Несколько фактов о нас</h2>
       <ul class="facts__list">
         <li class="facts__item facts__item--assortment">
-          <span>01</span>
-          <p>Самый широкий выбор велосипедов!</p>
+          <div class="facts__wrapper">
+            <span>01</span>
+            <p>Самый широкий выбор велосипедов!</p>
+          </div>
         </li>
         <li class="facts__item facts__item--delivery">
-          <span>02</span>
-          <p>Доставка велосипедов по всей России!</p>
+          <div class="facts__wrapper">
+            <span>02</span>
+            <p>Доставка велосипедов по&nbsp;всей России!</p>
+          </div>
         </li>
         <li class="facts__item facts__item--accessories">
-          <span>03</span>
-          <p>Большой выбор крутых аксессуаров!</p>
+          <div class="facts__wrapper">
+            <span>03</span>
+            <p>Большой выбор крутых аксессуаров!</p>
+          </div>
         </li>
         <li class="facts__item facts__item--consulting">
-          <span>04</span>
-          <p>Профессиональные консультации!</p>
+          <div class="facts__wrapper">
+            <span>04</span>
+            <p>Профессиональные консультации!</p>
+          </div>
         </li>
       </ul>
     </section>
@@ -92,11 +101,11 @@
           <li class="catalog__item catalog__item--road">
             <picture>
               <!-- 1x: 270; 2x: 540px -->
-              <!-- <source type="image/webp" media="(max-width: 1023px)" srcset="img/road-bike-tablet.webp 1x, img/road-bike-tablet@2x.webp 2x"> -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/road-bike-tablet.webp 1x, img/road-bike-tablet@2x.webp 2x">
               <!-- 1x: 342; 2x: 684px -->
               <source type="image/webp" srcset="img/road-bike-desktop.webp 1x, img/road-bike-desktop@2x.webp 2x">
               <!-- 1x: 270; 2x: 540px -->
-              <!-- <source media="(max-width: 1023px)" srcset="img/road-bike-tablet.jpg 1x, img/road-bike-tablet@2x.jpg 2x"> -->
+              <source media="(max-width: 1023px)" srcset="img/road-bike-tablet.jpg 1x, img/road-bike-tablet@2x.jpg 2x">
               <!-- 1x: 342; 2x: 684px -->
               <img src="img/road-bike-desktop.jpg" srcset="img/road-bike-desktop@2x.jpg 2x" width="342" height="503" alt="Дорожный велосипед">
             </picture>
@@ -105,11 +114,11 @@
           <li class="catalog__item catalog__item--mountain">
             <picture>
               <!-- 1x: 270; 2x: 540px -->
-              <!-- <source type="image/webp" media="(max-width: 1023px)" srcset="img/mountain-bike-tablet.webp 1x, img/mountain-bike-tablet@2x.webp 2x"> -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/mountain-bike-tablet.webp 1x, img/mountain-bike-tablet@2x.webp 2x">
               <!-- 1x: 342; 2x: 684px -->
               <source type="image/webp" srcset="img/mountain-bike-desktop.webp 1x, img/mountain-bike-desktop@2x.webp 2x">
               <!-- 1x: 270; 2x: 540px -->
-              <!-- <source media="(max-width: 1023px)" srcset="img/mountain-bike-tablet.jpg 1x, img/mountain-bike-tablet@2x.jpg 2x"> -->
+              <source media="(max-width: 1023px)" srcset="img/mountain-bike-tablet.jpg 1x, img/mountain-bike-tablet@2x.jpg 2x">
               <!-- 1x: 342; 2x: 684px -->
               <img src="img/mountain-bike-desktop.jpg" srcset="img/mountain-bike-desktop@2x.jpg 2x" width="342" height="566" alt="Дорожный велосипед">
             </picture>
@@ -118,11 +127,11 @@
           <li class="catalog__item catalog__item--children">
             <picture>
               <!-- 1x: 270; 2x: 540px -->
-              <!-- <source type="image/webp" media="(max-width: 1023px)" srcset="img/children-bike-tablet.webp 1x, img/children-bike-tablet@2x.webp 2x"> -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/children-bike-tablet.webp 1x, img/children-bike-tablet@2x.webp 2x">
               <!-- 1x: 342; 2x: 684px -->
               <source type="image/webp" srcset="img/children-bike-desktop.webp 1x, img/children-bike-desktop@2x.webp 2x">
               <!-- 1x: 270; 2x: 540px -->
-              <!-- <source media="(max-width: 1023px)" srcset="img/children-bike-tablet.jpg 1x, img/children-bike-tablet@2x.jpg 2x"> -->
+              <source media="(max-width: 1023px)" srcset="img/children-bike-tablet.jpg 1x, img/children-bike-tablet@2x.jpg 2x">
               <!-- 1x: 342; 2x: 684px -->
               <img src="img/children-bike-desktop.jpg" srcset="img/children-bike-desktop@2x.jpg 2x" width="342" height="513" alt="Дорожный велосипед">
             </picture>
@@ -137,23 +146,23 @@
           <h2>Видео про велосипеды</h2>
           <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         </div>
-      </div>
-      <div class="video__preview">
-        <picture>
-          <!-- 1x: 288; 2x: 576px -->
-          <source type="image/webp" media="(max-width: 768px)" srcset="img/video-background-mobile.webp 1x, img/video-background-mobile@2x.webp 2x">
-          <!-- 1x: 503; 2x: 1006px -->
-          <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-background-tablet.webp 1x, img/video-background-tablet@2x.webp 2x">
-          <!-- 1x: 929; 2x: 1858px -->
-          <source type="image/webp" srcset="img/video-background-desktop.webp 1x, img/video-background-desktop@2x.webp 2x">
-          <!-- 1x: 288; 2x: 576px -->
-          <source media="(max-width: 768px)" srcset="img/video-background-mobile.jpg 1x, img/video-background-mobile@2x.jpg 2x">
-          <!-- 1x: 503; 2x: 1006px -->
-          <source media="(max-width: 1023px)" srcset="img/video-background-tablet.jpg 1x, img/video-background-tablet@2x.jpg 2x">
-          <!-- 1x: 929; 2x: 1858px -->
-          <img src="img/video-background-desktop.jpg" srcset="img/video-background-desktop@2x.jpg 2x" width="929" height="522" alt="Обложка видео про велосипеды">
-        </picture>
-        <button class="video__button" type="button"><span class="visually-hidden">Кнопка PLay</span></button>
+        <div class="video__preview">
+          <picture>
+            <!-- 1x: 288; 2x: 576px -->
+            <source type="image/webp" media="(max-width: 768px)" srcset="img/video-background-mobile.webp 1x, img/video-background-mobile@2x.webp 2x">
+            <!-- 1x: 503; 2x: 1006px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-background-tablet.webp 1x, img/video-background-tablet@2x.webp 2x">
+            <!-- 1x: 929; 2x: 1858px -->
+            <source type="image/webp" srcset="img/video-background-desktop.webp 1x, img/video-background-desktop@2x.webp 2x">
+            <!-- 1x: 288; 2x: 576px -->
+            <source media="(max-width: 768px)" srcset="img/video-background-mobile.jpg 1x, img/video-background-mobile@2x.jpg 2x">
+            <!-- 1x: 503; 2x: 1006px -->
+            <source media="(max-width: 1023px)" srcset="img/video-background-tablet.jpg 1x, img/video-background-tablet@2x.jpg 2x">
+            <!-- 1x: 929; 2x: 1858px -->
+            <img src="img/video-background-desktop.jpg" srcset="img/video-background-desktop@2x.jpg 2x" width="929" height="522" alt="Обложка видео про велосипеды">
+          </picture>
+          <button class="video__button" type="button"><span class="visually-hidden">Кнопка PLay</span></button>
+        </div>
       </div>
     </section>
   </main>
