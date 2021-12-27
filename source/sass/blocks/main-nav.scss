@@ -41,11 +41,12 @@
   padding: 0 20px 0 20px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: relative;
 
   @media (min-width: $desktop-width) {
     flex-wrap: wrap;
+    column-gap: 135px;
   }
 
   @media (max-width: $tablet-max-width) {
